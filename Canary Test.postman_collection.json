@@ -1,0 +1,675 @@
+{
+	"info": {
+		"_postman_id": "4c81ed20-3cb0-4907-bd93-bba20cd5df19",
+		"name": "Canary Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19776370"
+	},
+	"item": [
+		{
+			"name": "https://canary-dev.acisio.com/dj-rest-auth/login/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"belal\",\r\n    \"password\" : \"belal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://canary-dev.acisio.com/dj-rest-auth/user/",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"dj-rest-auth",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://canary-dev.acisio.com/dj-rest-auth/login/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"belal\",\r\n    \"password\" : \"belal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://canary-dev.acisio.com/dj-rest-auth/user/",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"dj-rest-auth",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"belal\",\r\n    \"password\" : \"belal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://canary-dev.acisio.com/dj-rest-auth/login/",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"dj-rest-auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auction_Detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk4NTc1NDcwLCJpYXQiOjE2OTA3OTk0NzAsImp0aSI6Ijk3ZDQyMzViY2Q4ZDRiNzc5ZGFhZTM3MzhhYmI1M2FjIiwidXNlcl9pZCI6NX0.fhjUVvCiNHW2fE9H3Yn8a8E_2IaeN4mCXPWvH8qQd_g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/auction_detail/1",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"auction_detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk4NTc1NDcwLCJpYXQiOjE2OTA3OTk0NzAsImp0aSI6Ijk3ZDQyMzViY2Q4ZDRiNzc5ZGFhZTM3MzhhYmI1M2FjIiwidXNlcl9pZCI6NX0.fhjUVvCiNHW2fE9H3Yn8a8E_2IaeN4mCXPWvH8qQd_g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subject\": \"تكيف\",\r\n    \"description\": \"اهلا بك معنا\",\r\n    \"department\": 1,\r\n    \"auction_price\": null,\r\n    \"basic_price\": 20000.0,\r\n    \"expiration_date\": \"2023-08-01T13:53:16+02:00\",\r\n    \"auction_file\": [],\r\n    \"added_by\": 2,\r\n    \"product\": 7,\r\n    \"suppliers\": [\r\n        1,\r\n        35,\r\n        36\r\n    ],\r\n    \"buyer\": null,\r\n    \"quantity\": 40,\r\n    \"replay_time\": 3,\r\n    \"disable\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/auctions_list",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"auctions_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_auction_detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk4NTc1NDcwLCJpYXQiOjE2OTA3OTk0NzAsImp0aSI6Ijk3ZDQyMzViY2Q4ZDRiNzc5ZGFhZTM3MzhhYmI1M2FjIiwidXNlcl9pZCI6NX0.fhjUVvCiNHW2fE9H3Yn8a8E_2IaeN4mCXPWvH8qQd_g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subject\": \"غسالات\",\r\n    \"description\": \"اهلا بك معنا\",\r\n    \"department\": 2,\r\n    \"auction_price\": null,\r\n    \"basic_price\": 900099.0,\r\n    \"expiration_date\": \"2023-08-01T13:53:16+02:00\",\r\n    \"auction_file\": [],\r\n    \"added_by\": 2,\r\n    \"product\": 6,\r\n    \"suppliers\": [\r\n        1,\r\n        35,\r\n        36\r\n    ],\r\n    \"buyer\": null,\r\n    \"quantity\": 90,\r\n    \"replay_time\": 3,\r\n    \"disable\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/auction_detail/1",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"auction_detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Department_Detail",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 202]);\r",
+							"});\r",
+							"pm.globals.set(\"variable_key\", \"variable_value\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/employee_detail/1",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"employee_detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update-Department",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk4NTc1NDcwLCJpYXQiOjE2OTA3OTk0NzAsImp0aSI6Ijk3ZDQyMzViY2Q4ZDRiNzc5ZGFhZTM3MzhhYmI1M2FjIiwidXNlcl9pZCI6NX0.fhjUVvCiNHW2fE9H3Yn8a8E_2IaeN4mCXPWvH8qQd_g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sales\",\r\n    \"disable\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/department_detail/1",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"department_detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Department",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk4NTc1NDcwLCJpYXQiOjE2OTA3OTk0NzAsImp0aSI6Ijk3ZDQyMzViY2Q4ZDRiNzc5ZGFhZTM3MzhhYmI1M2FjIiwidXNlcl9pZCI6NX0.fhjUVvCiNHW2fE9H3Yn8a8E_2IaeN4mCXPWvH8qQd_g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/department_detail/4",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"department_detail",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product_Detail",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "product_list",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Product_Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"anton samor\",\r\n  \"image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3XcPL0EURSyXvEEFyFRRkhj7kakB6bLXc2Nx41yOWr5E9JG8DrNeNHj3Is9QRf6628AA&usqp=CAU\",\r\n  \"disable\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/product_detail/1",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"product_detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product_Delete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Product Deleted Success \", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/product_detail/3",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"product_detail",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supplier_Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/supplier_detail/1",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"supplier_detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "suppliers_list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/suppliers_list",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"suppliers_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All_Detail_Supplier",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/supplier_detail_get/2",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"supplier_detail_get",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_Suppliers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Anton\",\r\n  \"disable\": true,\r\n  \"phone\": 2144544647,\r\n  \"supplier\": 2,\r\n  \"department\": [\r\n    2\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/supplier",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"supplier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Suppliers",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Anton Samir\",\r\n  \"disable\": true,\r\n  \"phone\": 214756567,\r\n  \"supplier\": 3,\r\n  \"department\": [\r\n    2\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/supplier_detail/1",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"supplier_detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Suppliers",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/supplier_detail/35",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"supplier_detail",
+						"35"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_Deartments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://canary-dev.acisio.com/core/user/departments",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"core",
+						"user",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change_Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"new_password1\": \"12345678//\",\r\n  \"new_password2\": \"12345678//\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://canary-dev.acisio.com/dj-rest-auth/password/change/",
+					"protocol": "https",
+					"host": [
+						"canary-dev",
+						"acisio",
+						"com"
+					],
+					"path": [
+						"dj-rest-auth",
+						"password",
+						"change",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
